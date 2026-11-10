@@ -19,7 +19,7 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Divyesh, a motivated BA Sociology graduate from Bhakta Kavi Narsinh Mehta University (BKNMU) living in Gir Somnath, India. I specialize in analyzing social structures, human behavior, and community dynamics. In addition to social research, I have 2 years of industrial experience as a CNC Machine Operator specializing in VMC and Wire Cut EDM operations at DKS Ortho & Sharma Pharmaceutical.
+      I2019m Divyesh, a motivated BA Sociology graduate from Bhakta Kavi Narsinh Mehta University (BKNMU) living in Gir Somnath, India. I specialize in analyzing social structures, human behavior, and community dynamics. In addition to social research, I have 5 years of industrial experience as a VMC Machine Operator &amp; VMC Setter specializing in high-precision CNC/VMC machining and Wire Cut EDM operations at Sharma Orthology Pvt. Ltd.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       In my spare time I practice photography, read books, engage in volunteer social work, and explore community development.

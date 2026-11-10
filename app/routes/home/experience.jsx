@@ -40,7 +40,7 @@ export const Experience = ({ id, visible, sectionRef }) => {
                 Industrial Experience
               </Heading>
               <Text className={styles.description} data-visible={visible} size="l" as="p">
-                Over the past 2 years, I have worked in highly precise manufacturing environments, operating advanced CNC machinery to produce orthopedic, medical, and pharmaceutical components.
+                Over the past 5 years, I have worked in highly precise manufacturing environments, operating and setting up advanced CNC/VMC machinery to produce orthopedic, medical, and pharmaceutical components.
               </Text>
             </div>
             <div className={styles.column}>
@@ -48,12 +48,12 @@ export const Experience = ({ id, visible, sectionRef }) => {
                 <div className={styles.jobItem}>
                   <div className={styles.jobHeader}>
                     <Heading level={4} as="h3" className={styles.jobTitle}>
-                      CNC / VMC & Wire Cut EDM Operator
+                      VMC Machine Operator &amp; VMC Setter
                     </Heading>
-                    <span className={styles.jobDuration}>2 Years</span>
+                    <span className={styles.jobDuration}>5 Years</span>
                   </div>
                   <Heading level={5} as="h4" className={styles.jobCompany}>
-                    DKS Ortho & Sharma Pharmaceutical
+                    Sharma Orthology Pvt. Ltd.
                   </Heading>
                   <ul className={styles.jobDetails}>
                     <li>

@@ -1,14 +1,14 @@
 services:
   - type: web
-    name: portfolio
+    name: chavda-divyesh-portfolio
     env: node
     region: singapore
     plan: free
     buildCommand: npm install && npm run build
-    startCommand: node ./build/server/index.js
+    startCommand: npm run start
     envVars:
-      - key: NODE_VERSION
-        value: 20.0.0
+      - key: NODE_ENV
+        value: production
       - key: SESSION_SECRET
         generateValue: true
       - key: AWS_ACCESS_KEY_ID

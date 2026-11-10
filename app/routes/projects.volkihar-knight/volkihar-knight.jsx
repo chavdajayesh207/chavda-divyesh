@@ -179,7 +179,7 @@ export function VolkiharKnight() {
             <ProjectTextRow center centerMobile noMargin>
               <ProjectSectionHeading>ISO & FDA Standards Compliance</ProjectSectionHeading>
               <ProjectSectionText>
-                All operations at DKS Ortho & Sharma Pharmaceutical adhered to strict quality assurance protocols. I maintained rigorous documentation logs, executed clean room handling routines, and complied with safety measures to ensure that surgical products met national and international regulations.
+                All operations at Sharma Orthology Pvt. Ltd. adhered to strict quality assurance protocols. I maintained rigorous documentation logs, executed clean room handling routines, and complied with safety measures to ensure that surgical products met national and international regulations.
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
