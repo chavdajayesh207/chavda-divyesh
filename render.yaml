@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: portfolio
+    env: node
+    region: singapore
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: node ./build/server/index.js
+    envVars:
+      - key: NODE_VERSION
+        value: 20.0.0
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false
+      - key: EMAIL
+        sync: false
+      - key: FROM_EMAIL
+        sync: false
