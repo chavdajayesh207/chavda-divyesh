@@ -56,8 +56,9 @@ export const DisplacementSphere = props => {
       antialias: false,
       alpha: true,
       powerPreference: 'high-performance',
-      failIfMajorPerformanceCaveat: true,
+      failIfMajorPerformanceCaveat: false,
     });
+    if (!renderer.current) return;
     renderer.current.setSize(innerWidth, innerHeight);
     renderer.current.setPixelRatio(1);
     renderer.current.outputColorSpace = LinearSRGBColorSpace;
@@ -110,6 +111,7 @@ export const DisplacementSphere = props => {
   }, [theme]);
 
   useEffect(() => {
+    if (!renderer.current || !camera.current || !sphere.current) return;
     const { width, height } = windowSize;
 
     const adjustedHeight = height + height * 0.3;
@@ -133,6 +135,7 @@ export const DisplacementSphere = props => {
       sphere.current.position.y = 16;
     }
   }, [reduceMotion, windowSize]);
+
 
   useEffect(() => {
     const onMouseMove = throttle(event => {
@@ -158,6 +161,7 @@ export const DisplacementSphere = props => {
     let animation;
 
     const animate = () => {
+      if (!renderer.current || !scene.current || !camera.current || !sphere.current) return;
       animation = requestAnimationFrame(animate);
 
       if (uniforms.current !== undefined) {
@@ -173,7 +177,7 @@ export const DisplacementSphere = props => {
 
     if (!reduceMotion && isInViewport) {
       animate();
-    } else {
+    } else if (renderer.current && scene.current && camera.current) {
       renderer.current.render(scene.current, camera.current);
     }
 
